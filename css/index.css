@@ -1,0 +1,338 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/montserrat/montserrat-regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    background-color: #006816;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.cover-page {
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+    background-size: cover;
+}
+
+.description>p {
+    padding: 3%;
+}
+
+.greenbg {
+    background-color: #4BB200;
+}
+
+h1 {
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+}
+
+.initials {
+    display: flex;
+    align-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo-img {
+    display: flex;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    color: white;
+    padding: 2%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 50vw;
+}
+
+.nav-links ul {
+    display: flex;
+    width: 100%;
+}
+
+.nav-links ul a {
+    flex: 1 1 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+.redbg {
+    background-color: #B20000;
+}
+
+
+.section {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 4%;
+    align-content: center;
+    align-items: center;
+}
+
+.section-img>img {
+    border-radius: 50%;
+}
+
+.service-card {
+    border-radius: 10px;
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    padding: 3%;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+.yellowbg {
+    background-color: #B2AB00;
+}
+
+.service-cards {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.work {
+    display: flex;
+    width: 50%;
+    margin-bottom: 3%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#work-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .cover-page {
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+        background-size: cover;
+    }
+
+    .description {
+        display: flex;
+    }
+
+    .description > p {
+        padding: 3%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        padding-bottom: 10%;
+        text-transform: uppercase;
+    }
+
+    .heading {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+    }
+
+    .logo-img {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .logo > img {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        height: 8vh;
+        justify-content: space-between;
+        position: fixed;
+        background: rgba(0, 0, 0, .7);
+        width: 100vw;
+        color: white;
+        padding: 5%;
+        z-index: 1;
+    }
+
+    #nav-links {
+        display: none;
+        background: rgba(0, 0, 0, .7);
+        margin-top: 5px;
+        width: 100vw;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .nav-links ul {
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        font-size: xx-large;
+        flex-wrap: wrap;
+    }
+
+    .nav-links ul a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        position: relative;
+        max-height: 8vh;
+    }
+
+    .nav-toggle>img {
+        color: white;
+        object-fit: contain;
+        display: flex;
+        height: 4vh;
+    }
+
+
+    .section {
+        display: flex;
+        height: auto;
+        width: 100vw;
+        padding: 7%;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section-img>img {
+        border-radius: 50%;
+    }
+
+    .service-card {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        border-radius: 10px;
+        justify-content: space-around;
+        padding: 5%;
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+    }
+
+    .service-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .work {
+        display: flex;
+        margin-bottom: 3%;
+        flex-wrap: wrap;
+    }
+
+    .work img {
+        display: flex;
+        width: 100%;
+        z-index: 0;
+    }
+
+}
