@@ -77,7 +77,10 @@ h1 {
 
 .initials a:link {
     color: white;
-    text-decoration: white;
+}
+
+.initials a:visited {
+    color: white;
 }
 
 .logo {
