@@ -277,20 +277,32 @@ h1 {
         display: flex;
         justify-content: center;
         width: 100%;
+        color: white;
     }
 
-    .nav-links ul a:clicked {
+    .nav-links ul a:link {
+        color: white;
+    }
+
+    .nav-links ul a:visited {
         display: flex;
         justify-content: center;
         width: 100%;
         color: grey;
     }
 
-    .nav-links ul a:current {
+    .nav-links ul a:active {
         display: flex;
         justify-content: center;
         width: 100%;
         color: red;
+    }
+
+    .nav-links ul a:hover {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: grey;
     }
 
     .nav-toggle {
