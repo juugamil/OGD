@@ -75,6 +75,11 @@ h1 {
     align-content: flex-start;
 }
 
+.initials a:link {
+    color: white;
+    text-decoration: white;
+}
+
 .logo {
     display: flex;
     width: 100%;
