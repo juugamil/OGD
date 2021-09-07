@@ -37,7 +37,7 @@ button {
     height: 100vh;
     flex-wrap: wrap;
     display: flex;
-    background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+    background-image: url(/img/flimgrain.gif);
     background-size: cover;
 }
 
@@ -67,7 +67,7 @@ h1 {
     height: 100vh;
     align-items: center;
     align-content: center;
-    background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+    background-image: url(/img/flimgrain.gif);
 }
 
 .initials {
@@ -190,7 +190,7 @@ h1 {
         align-content: center;
         flex-wrap: wrap;
         display: flex;
-        background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+        background-image: url(/img/flimgrain.gif);
         background-size: cover;
     }
 
@@ -222,7 +222,7 @@ h1 {
         align-items: center;
         align-content: center;
         justify-content: center;
-        background-image: url(http://everythinglethal.com/wp-content/uploads/2018/12/slikk_filmgrain.gif);
+        background-image: url(/img/flimgrain.gif);
     }
 
     .logo {
