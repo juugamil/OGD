@@ -270,6 +270,7 @@ h1 {
         justify-content: center;
         font-size: xx-large;
         flex-wrap: wrap;
+        padding: 0%;
     }
 
     .nav-links ul a {
