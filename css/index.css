@@ -1,13 +1,29 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(/fonts/montserrat/montserrat-regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand&family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    background-color: black;
 }
 
 body {
     margin: 0;
 }
 
+h1 {
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
 button {
+    font-family: 'Fjalla One', sans-serif;
     background-color: #44A86C;
     border-radius: 10px;
     color: #eeeeee;
@@ -21,6 +37,7 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    border-style: none;
 }
 
 .button {
@@ -28,6 +45,12 @@ button {
     width: 100%;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-fluid {
+    background-color: black;
 }
 
 .cover-page {
@@ -36,7 +59,7 @@ button {
     height: 100vh;
     flex-wrap: wrap;
     display: flex;
-    background-image: url(/img/flimgrain.gif);
+    background: linear-gradient(0deg, rgba(0, 122, 41, 0.54), rgba(0, 0, 0, 0.69)), url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ignant.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fgeometrieva-cvetkov-dimitrov_photography_studio-2.gif&f=1&nofb=1);
     background-size: cover;
 }
 
@@ -66,12 +89,13 @@ h1 {
     height: 100vh;
     align-items: center;
     align-content: center;
-    background-image: url(/img/flimgrain.gif);
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ignant.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fgeometrieva-cvetkov-dimitrov_photography_studio-2.gif&f=1&nofb=1);
 }
 
 .initials {
     display: flex;
     align-content: flex-start;
+    height: 7vh;
 }
 
 .initials a:link {
@@ -89,8 +113,9 @@ h1 {
     align-content: center;
 }
 
-.logo-img {
+.logo img {
     display: flex;
+    width: 20%;
 }
 
 .navigation {
@@ -98,7 +123,7 @@ h1 {
     display: flex;
     flex: 1 1 100%;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     background: rgba(0, 0, 0, .7);
     width: 100%;
     color: white;
@@ -110,7 +135,8 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     align-content: center;
-    width: 50vw;
+    width: 35vw;
+    height: 5vh;
 }
 
 .nav-links ul {
@@ -121,9 +147,16 @@ h1 {
 .nav-links ul a {
     flex: 1 1 100%;
     display: inline-flex;
+    font-family: 'Quicksand', sans-serif !important;
     justify-content: space-evenly;
     list-style: none;
     text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
 }
 
 
@@ -137,10 +170,11 @@ h1 {
     color: white;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     padding: 4%;
     align-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .section-img>img {
@@ -192,14 +226,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
-    .cover-page {
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        display: flex;
-        background-image: url(/img/flimgrain.gif);
-        background-size: cover;
-    }
+
 
     .description {
         display: flex;
@@ -253,7 +280,7 @@ h1 {
         display: flex;
         height: 8vh;
         justify-content: space-between;
-        position: fixed;
+        position: relative;
         background: rgba(0, 0, 0, .7);
         width: 100vw;
         color: white;
@@ -264,10 +291,10 @@ h1 {
     #nav-links {
         display: none;
         background: rgba(0, 0, 0, .7);
-        margin-top: 5px;
         width: 100vw;
         justify-content: center;
         z-index: 1;
+        height: auto;
     }
 
     .nav-links ul {
@@ -295,7 +322,7 @@ h1 {
         display: flex;
         justify-content: center;
         width: 100%;
-        color: grey;
+        color: white;
     }
 
     .nav-links ul a:active {
@@ -313,8 +340,11 @@ h1 {
     }
 
     .nav-toggle {
-        position: relative;
-        max-height: 8vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-content: flex-start;
+        height: 7vh;
     }
 
     .nav-toggle>img {
@@ -325,17 +355,6 @@ h1 {
     }
 
 
-    .section {
-        display: flex;
-        height: auto;
-        width: 100vw;
-        padding: 7%;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .section-img>img {
         border-radius: 50%;
     }
@@ -343,7 +362,7 @@ h1 {
     .service-card {
         display: flex;
         width: 100%;
-        height: 50vh;
+        height: auto;
         border-radius: 10px;
         justify-content: space-around;
         padding: 5%;
