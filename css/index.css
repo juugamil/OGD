@@ -90,9 +90,11 @@ h1 {
 
 .hero {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     align-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .initials {
