@@ -214,6 +214,10 @@ h1 {
     align-items: center;
 }
 
+.social-logo img {
+    height: 25%;
+}
+
 .yellowbg {
     background-color: #B2AB00;
 }
