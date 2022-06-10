@@ -448,6 +448,7 @@ h1 {
     }
 
     .social-icons {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: stretch;
