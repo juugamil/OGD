@@ -448,7 +448,7 @@ h1 {
         align-content: center;
     }
     
-    .social-logo {
+    .social-logo a {
         display: flex;
         justify-content: space-around;
         width: 50%;
