@@ -420,6 +420,10 @@ h1 {
         display: flex;
         height: 4vh;
     }
+    
+    .section {
+        height: 100vh;
+    }
 
 
     .section-img>img {
