@@ -422,7 +422,8 @@ h1 {
     }
     
     .section {
-        height: 100vh;
+        display: flex;
+        height: auto;
     }
 
 
