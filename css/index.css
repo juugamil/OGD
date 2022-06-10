@@ -453,6 +453,10 @@ h1 {
         align-content: center;
         text-align: center;
     }
+
+    .social-logo {
+        height: 70%;
+    }
     
     .social-logo a {
         justify-content: space-around;
